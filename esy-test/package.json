@@ -1,8 +1,11 @@
 {
   "esy": {
-    "build": "hello"
+    "build": [
+      "ocamlopt -ccopt -static -o hello hello.ml",
+      "./hello"
+    ]
   },
   "dependencies": {
-    "esy-hello": "*"
+    "ocaml": "5.2.0-musl"
   }
 }
